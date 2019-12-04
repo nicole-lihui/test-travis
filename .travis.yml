@@ -1,5 +1,6 @@
 language: java
 jdk:
-    - oraclejdk11
+    - oraclejdk8
+
 script:
-    mvn exec:java -Dexec.mainClass=com.maxwit.App
+    ./gradlew build
