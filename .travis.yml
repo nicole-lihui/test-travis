@@ -1,8 +1,10 @@
-language: groovy
+language: 
+  java
 
 jdk:
-    - oraclejdk8
-    - openjdk7
+  - oraclejdk8
 
-script:
-    ./gradlew build
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true
+
+script: mvn test
+
