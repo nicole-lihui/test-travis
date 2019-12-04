@@ -5,7 +5,7 @@ jdk:
   - openjdk11
 
 install:
-  mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  cd mybatis
   
 script:
-  mvn test -B
+  mvn exec:java -Dexec.mainClass=com.maxwit.App
