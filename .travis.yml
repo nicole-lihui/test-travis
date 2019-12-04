@@ -1,0 +1,5 @@
+language: java
+jdk:
+    - oraclejdk11
+script:
+    mvn exec:java -Dexec.mainClass=com.maxwit.App
