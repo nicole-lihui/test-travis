@@ -1,10 +1,12 @@
-language: 
+language:
   java
 
 jdk:
-  - oraclejdk11
+  - openjdk11
 
-install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true
-
-script: mvn test
+install:
+  mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  
+script:
+  mvn test -B
 
